@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9; /* Neutral light background */
+    color: #333; /* Darker text for better readability */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+header {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    top : 20px;
+    right : 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+
+/* Background Effect (Static) */
+/* Background Effect (Removed for a clean look) */
+.background-shapes {
+    display: none; /* Hides the background shapes */
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #2575fc;
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+h1:hover, h2:hover {
+    color: #A020F0;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Team Member Section */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.member {
+    text-align: center;
+    margin: 20px;
+    width: 250px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #2575fc;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2575fc;
+}
+
+.member p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Mission Section */
+.mission {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mission p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Contact Button */
+.contact-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn:hover {
+    background-color: #1a5bb8;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .intro {
+        font-size: 1.1em;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    .contact-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+/* Navigation Styles */
+.top-nav {
+    position: fixed;
+    top: 10px;
+    left: 60px;
+    display: flex; /* Align items in a row */
+    gap: 20px; /* Space between the items */
+    z-index: 1000; /* Keeps the navigation on top of all content */
+}
+
+.nav-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #130101;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #010e01; /* Bright green on hover */
+    color: #fcf8f7;
+    cursor: pointer;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column; /* Stack items vertically on small screens */
+        top: 5px;
+        left: 5px;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+
+
